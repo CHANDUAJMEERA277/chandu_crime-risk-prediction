@@ -1,0 +1,6 @@
+CrimeType,Location,Hour,Day,Severity
+Theft,Area1,10,Monday,2
+Assault,Area2,22,Friday,4
+Robbery,Area1,18,Saturday,3
+Theft,Area3,14,Wednesday,2
+Assault,Area2,21,Sunday,5
