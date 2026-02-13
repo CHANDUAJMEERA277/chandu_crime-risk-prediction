@@ -1,5 +1,19 @@
 __pycache__/
 .ipynb_checkpoints/
+
+# runtime / logs
 crime_reports.csv
-*.pkl
 .env
+
+# ignore pytorch models only
+*.pt
+
+# junk files accidentally created
+26.0.1
+Build
+Checking
+Cloning
+Docs
+Running
+Using
+git
