@@ -55,18 +55,28 @@ def index():
 
             if not file_exists:
                 writer.writerow([
-                    "CrimeType", "City", "Zone",
-                    "Date", "Time", "Day", "Prediction"
+                    "CrimeType",
+                    "City",
+                    "Zone",
+                    "Date",
+                    "Time",
+                    "Day",
+                    "Prediction"
                 ])
 
             writer.writerow([
-                crime_type, city, zone,
-                date_str, time_str, day, prediction
+                crime_type,
+                city,
+                zone,
+                date_str,
+                time_str,
+                day,
+                prediction
             ])
 
     return render_template("index.html", prediction=prediction)
 
-
-# ---------------- RUN SERVER ----------------
+# ---------------- RUN SERVER (LOCAL + CLOUD SAFE) ----------------
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
